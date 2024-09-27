@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: white;
+}
+
+header {
+    background-color: #1db954;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.playlist {
+    padding: 20px;
+}
+
+.song {
+    background-color: #282828;
+    padding: 10px;
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+.song:hover {
+    background-color: #404040;
+}
+
+.now-playing {
+    padding: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #1db954;
+}
+
+/* Mobile Styles */
+@media (max-width: 600px) {
+    nav ul li {
+        display: block; /* Stack navigation items vertically */
+        margin-right: 0; /* Remove right margin */
+        margin-bottom: 10px; /* Add bottom margin for spacing */
+    }
+
+    .playlist, .now-playing {
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
+
+    .song {
+        padding: 8px; /* Slightly reduce padding for songs */
+    }
+}
+
+/* Tablet Styles */
+@media (min-width: 601px) and (max-width: 900px) {
+    nav ul li {
+        display: inline; /* Keep items in a line */
+        margin-right: 15px; /* Adjust margin for spacing */
+    }
+
+    .playlist, .now-playing {
+        padding: 15px; /* Moderate padding for tablets */
+    }
+
+    .song {
+        padding: 10px; /* Standard padding for songs */
+    }
+}
+
+/* Desktop Styles */
+@media (min-width: 901px) {
+    nav ul li {
+        margin-right: 20px; /* Standard margin for desktop */
+    }
+
+    .playlist, .now-playing {
+        padding: 20px; /* Standard padding for larger screens */
+    }
+
+    .song {
+        padding: 10px; /* Standard padding for songs */
+    }
+}
